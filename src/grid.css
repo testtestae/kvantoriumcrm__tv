@@ -1,0 +1,17 @@
+.App{
+    display: grid;
+
+    grid-template-columns: auto 10vw 25vw;
+    grid-template-rows: 20vh auto 35vh;
+
+    grid-template-areas:
+        '   gallery       org_logo     clock'
+        '   gallery       timetable    timetable '
+        'bulletin_board   timetable    timetable';
+}
+
+.photo_gallery{grid-area: gallery;}
+.bulletin_board{grid-area: bulletin_board;}
+.org_logo{grid-area: org_logo;}
+.clock{grid-area: clock;}
+.timetable{grid-area: timetable;}
